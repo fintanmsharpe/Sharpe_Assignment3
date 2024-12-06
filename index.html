@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Fintan Sharpe</title>
-<link href="https://fonts.googleapis.com/css?family=Fira Code" rel="stylesheet">
-<style>
-  /* netnet default bg */
-  .Welcome{
-    color: white;
-    font-family: 'Fira Code';
-  }
-  body{
-    background: linear-gradient(0deg, rgba(16, 52, 86, 1), rgba(55, 106, 153, 1));
-    color: white;
-  }
-  h1{
-    font-family: 'Fira Code';
-    color: white;
-    font-size: 32;
-    font-weight: 2000;
-  }
-  p{
-    font-family: 'Fira Code';
-    color: white;
-    font-size: 16;
-    font-weight: normal;
-  }
-</style>
-<body>
-<div class="Welcome">
-<a href="Welcome">Fintan Sharpe</a>
-<a href="About">About</a>
-<a href="Projects" >Projects</a>
-<a href="Work/Resume" >Work/Resume</a>
-<a href="Running" >Running</a>
-</div>
+  <meta charset="UTF-8">
+  <title>Fintan Sharpe</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira Code" rel="stylesheet">
+  <style>
+    /* netnet default bg */
+    body {
+      background: linear-gradient(0deg, rgba(16, 52, 86, 1), rgba(55, 106, 153, 1));
+      color: white;
+    }
 
-  
-<div class="About">
-<h1>
-  Hi, Welcome to my Website!
-  </h1>
-<p>
-  My name is Fintan Sharpe, and I am a second year University Student and Varsity athlete studying Global Business and Digital Arts at the University of Waterloo.
-  </p>
-</div>
-  
-<div class="Projects">
-  <p>
-  Hello
-  </p>
-</div>
-  
-<div class="Work/Resume">
-  <p>
-  Hello
-  </p>
-</div>
+    h1 {
+      font-family: 'Fira Code';
+      color: white;
+      font-size: 32;
+      font-weight: 2000;
+    }
 
-<div class="Running">
-  <p>
-  Hello
-  </p>
-</div>
-  
-  
-</body>
-</html>    
+    p {
+      font-family: 'Fira Code';
+      color: white;
+      font-size: 16;
+      font-weight: normal;
+    }
+
+    .navbar {
+      font-family: 'Fira Code';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16 32;
+      background: transparent;
+    }
+
+    .navbar .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 16;
+    }
+
+    /* Landing Screen:) */
+    .landing {
+      margin-top: 10vh;
+      /* Centers content vertically */
+      padding: 32;
+    }
+
+    .landing h1 {
+      box-align: center;
+      font-size: 32;
+      font-weight: bold;
+      margin-bottom: 16;
+    }
+
+    .landing p {
+      font-size: 16;
+      margin-bottom: 32;
+    }
+
+    .landing hr {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid white;
+      opacity: 0.8;
+    }
+
+    .prototype {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .prototype h2 {
+      font-family: 'Fira Code';
+      font-size: 16;
+      margin-bottom: 1rem;
+      color: white;
+      padding-top: 100;
+    }
+
+    .prototype iframe {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="logo">Fintan Sharpe</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work/Resume</a></li>
+          <li><a href="#running">Running</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="landing">
+      <h1>Hi, Welcome to my Website!</h1>
+      <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
+      <hr>
+    </div>
+    
+    <div class="prototype">
+      <h2>Explore My Figma Prototype</h2>
+      <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
+      </iframe>
+    </section>
+
+
+
+  </body>
+</html>
