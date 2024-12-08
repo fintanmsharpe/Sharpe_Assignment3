@@ -21,10 +21,10 @@
       font-size: 16;
       font-weight: normal;
     }
-    
+
     li a:hover {
-  background-color: #555;
-  color: white;
+      background-color: #555;
+      color: white;
     }
 
     .navbar {
@@ -81,108 +81,135 @@
       opacity: 0.8;
     }
 
- /* Section Styling */
-.projects-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-  scroll-margin-top: 80px; /* Adjust for sticky navigation */
-  overflow: hidden; /* Clear floats */
-}
+    /* Section Styling */
+    .projects-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      scroll-margin-top: 80px;
+      /* Adjust for sticky navigation */
+      overflow: hidden;
+      /* Clear floats */
+    }
 
-/* Prototype Section */
-.prototype {
-  float: left; /* Align the prototype to the left */
-  width: 45%; /* Reserve space for the prototype */
-  text-align: center;
-  margin: 2rem 0;
-}
+    /* Prototype Section */
+    .prototype {
+      float: left;
+      /* Align the prototype to the left */
+      width: 45%;
+      /* Reserve space for the prototype */
+      text-align: center;
+      margin: 2rem 0;
+    }
 
-.prototype iframe {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 100%; /* Make iframe responsive */
-  height: auto;
-}
+    .prototype iframe {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      /* Make iframe responsive */
+      height: auto;
+    }
 
-.prototype h2 {
-  font-family: 'Fira Code', monospace;
-  font-size: 16px;
-  margin-bottom: 1rem;
-  color: white;
-  padding-top: 20px;
-}
+    .prototype h2 {
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      color: white;
+      padding-top: 20px;
+    }
 
-/* Text Content */
-    
-    .text-container{
+    /* Text Content */
+
+    .text-flexbox {
       float: left;
       width: 600px;
       height: 600px;
       background-color: transparent;
       position: relative;
       top: 30px;
-      
+
     }
-.project-right {
-  float: left; /* Align the text to the right */
-  color: rgba(16, 52, 86, 1);
-  padding: 5px;
-  
-}
 
-.project-right h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  font-family: 'Fira Code', monospace;
-  font-weight: bold;
-  
-}
+    .project-right {
+      float: left;
+      /* Align the text to the right */
+      color: rgba(16, 52, 86, 1);
+      padding: 5px;
 
-.project-right p {
-  line-height: 1.6;
-  font-size: 16px;
-}
+    }
 
-/* Projects Bottom Section */
-.projects-bottom {
-  clear: both; /* Ensure this section starts below floated content */
-  text-align: center;
-  margin-top: 40px;
-}
+    .project-right h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: 'Fira Code', monospace;
+      font-weight: bold;
 
-.slideshow {
-  margin-bottom: 20px;
-}
+    }
 
-.slideshow img {
-  max-width: 200px;
-  margin: 0 10px; /* Space between images */
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .project-right p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
 
-/* Button Styling */
-.presentation-button {
-  display: inline-block;
-  background-color: #4caf50;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.presentation-button:hover {
-  background-color: #45a049;
-}
+    /* Projects Bottom Section */
+    .projects-bottom {
+      clear: both;
+      /* Ensure this section starts below floated content */
+      text-align: center;
+      margin-top: 40px;
+    }
     
+    .text-flexbox-2 {
+      
+      width: 1200px;
+      height: 200px;
+      background-color: transparent;
+      position: relative;
+      left: 155px;
 
+    }
+    
+    .text-flexbox-2 p {
+      text-align: left;
+      max-width: 600px;
+      color: rgba(16, 52, 86, 1);
+    }
+
+    .slideshow {
+      margin-bottom: 20px;
+    }
+
+    .slideshow img {
+      max-width: 600px;
+      margin: 0 10px;
+      /* Space between images */
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Button Styling */
+    .presentation-button {
+      background-color: rgba(16, 52, 86, 1);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 50px;
+      font-size: 16px;
+      font-family: 'Fira Code';
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      float: right;
+      position: relative;
+      bottom: 70px;
+      right: 150px;
+    }
+
+    .presentation-button:hover {
+      background-color: rgba(100, 135, 103, 1);
+    }
   </style>
-  
-  
-  
-  
+
+
+
+
   <body>
     <div class="navbar">
       <div class="logo">Fintan Sharpe</div>
@@ -203,68 +230,70 @@
       <hr>
       <br>
       <p>
-                Oh my bad... you want to learn more about me don’t you?
-            </p>
-            <p>
-                This website is all about me! My passions, my coolest projects, my resume, and a look into my life. 
-                Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating 
-                engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
-            </p>
-            <p>
-                Uh wait a minute, that’s a hefty statement…<br>
-                Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
-                (With some engaging prototypes too!)
-            </p>
-            <p>Alright, you can scroll down now.</p>
-    </div>
-    
-
-<br>
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<section id="projects" class="projects-section">
-  
-  
-  <div class="prototype">
-      <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
-      </iframe>
-  </div>
-    <!-- Text Content -->
-  <div class="text-container">
-    <div class="project-right">
-      <h2>Projects - RoomEase</h2>
-      <p>
-        We interviewed and surveyed hundreds of students, and they all said the same thing:
-        <br><br>
-        Why is finding housing to rent for University with my roommates so difficult?
-        <br><br>
-        Let us introduce: RoomEase. <br>After living in a dorm for our first years in University, we found that our schools tend to leave us to fend for ourselves when it comes to finding safe and affordable housing close to the school. This prototype presents a solution that can help students in the search for housing, sublets, and roommates that match their lifestyle.
-        <br><br>
-        Upon entering our app, users will be prompted to set up their personal profile, after which they will be able to engage in a simple housing search that doesn’t require the use of multiple housing websites, and gives students the ability the learn about the renting process in order to be more independent and prevent scams.
+        Oh my bad... you want to learn more about me don’t you?
       </p>
-  </div>
-  </div>
-    
-
-  <!-- Slideshow and Call to Action -->
-  <div class="projects-bottom">
-    <div class="slideshow">
-      <img src="slideshow-image1.png" alt="RoomEase Slide 1">
-      <img src="slideshow-image2.png" alt="RoomEase Slide 2">
+      <p>
+        This website is all about me! My passions, my coolest projects, my resume, and a look into my life.
+        Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating
+        engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
+      </p>
+      <p>
+        Uh wait a minute, that’s a hefty statement…<br>
+        Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
+        (With some engaging prototypes too!)
+      </p>
+      <p>Alright, you can scroll down now.</p>
     </div>
-    <p>
-      Read more about how RoomEase can revolutionize the student-housing search process with our data and early product designing.
-    </p>
-    <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
-  </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="projects" class="projects-section">
+
+
+      <div class="prototype">
+        <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
+        </iframe>
+      </div>
+      <!-- Text Content -->
+      <div class="text-flexbox">
+        <div class="project-right">
+          <h2>Projects - RoomEase</h2>
+          <p>
+            We interviewed and surveyed hundreds of students, and they all said the same thing:
+            <br><br>
+            Why is finding housing to rent for University with my roommates so difficult?
+            <br><br>
+            Let us introduce: RoomEase. <br>After living in a dorm for our first years in University, we found that our schools tend to leave us to fend for ourselves when it comes to finding safe and affordable housing close to the school. This prototype presents a solution that can help students in the search for housing, sublets, and roommates that match their lifestyle.
+            <br><br>
+            Upon entering our app, users will be prompted to set up their personal profile, after which they will be able to engage in a simple housing search that doesn’t require the use of multiple housing websites, and gives students the ability the learn about the renting process in order to be more independent and prevent scams.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Slideshow and Call to Action -->
+      <div class="projects-bottom">
+        <div class="slideshow">
+          <img src="Home.png" alt="RoomEase Slide 2">
+          <img src="Prototype-Slide.png" alt="RoomEase Slide 2">
+        </div>
+        <div class="text-flexbox-2">
+          <p>
+          Read more about how RoomEase can revolutionize the student-housing search process on our slides, which includes a deep dive into our data and early product designing.
+        </p>
+           <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
+        </div>
+      </div>
     </section>
 
   </body>
