@@ -57,7 +57,8 @@
     .landing {
       margin-top: 10vh;
       /* Centers content vertically */
-      padding: 100;
+      padding-top: 100;
+      padding-bottom: 500;
       max-width: 800px;
       margin: 0 auto;
     }
@@ -86,17 +87,13 @@
       padding: 50px 20px;
       background-color: #f9f9f9;
       scroll-margin-top: 80px;
-      /* Adjust for sticky navigation */
       overflow: hidden;
-      /* Clear floats */
     }
 
     /* Prototype Section */
     .prototype {
       float: left;
-      /* Align the prototype to the left */
       width: 45%;
-      /* Reserve space for the prototype */
       text-align: center;
       margin: 2rem 0;
     }
@@ -105,7 +102,6 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       max-width: 100%;
-      /* Make iframe responsive */
       height: auto;
     }
 
@@ -117,22 +113,15 @@
       padding-top: 20px;
     }
 
-    /* Text Content */
-
     .text-flexbox {
-      float: left;
-      width: 600px;
+      width: 1000px;
       height: 600px;
       background-color: transparent;
-      position: relative;
-      top: 30px;
-      left: 100px;
+      margin: 0 auto;
 
     }
 
     .project-right {
-      float: left;
-      /* Align the text to the right */
       color: rgba(16, 52, 86, 1);
       padding: 5px;
 
@@ -158,16 +147,16 @@
       text-align: center;
       margin-top: 40px;
     }
-    
+
     .text-flexbox-2 {
       margin: 0 auto;
       width: 1200px;
       height: 200px;
-      background-color: red;
-      
+      background-color: transparent;
+
 
     }
-    
+
     .text-flexbox-2 p {
       text-align: left;
       max-width: 600px;
@@ -245,27 +234,20 @@
       <p>Alright, you can scroll down now.</p>
     </div>
 
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<div class="Clear-Divider">
+  
+    </div>
     <br>
     <section id="projects" class="projects-section">
 
 
-      <div class="prototype">
-        <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
-        </iframe>
-      </div>
+
       <!-- Text Content -->
       <div class="text-flexbox">
+        <div class="prototype">
+          <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
+          </iframe>
+        </div>
         <div class="project-right">
           <h2>Projects - RoomEase</h2>
           <p>
@@ -289,9 +271,9 @@
         </div>
         <div class="text-flexbox-2">
           <p>
-          Read more about how RoomEase can revolutionize the student-housing search process on our slides, which includes a deep dive into our data and early product designing.
-        </p>
-           <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
+            Read more about how RoomEase can revolutionize the student-housing search process on our slides, which includes a deep dive into our data and early product designing.
+          </p>
+          <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
         </div>
       </div>
     </section>
