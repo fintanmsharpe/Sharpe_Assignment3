@@ -12,16 +12,19 @@
 
     h1 {
       font-family: 'Fira Code';
-      color: white;
       font-size: 32;
       font-weight: 2000;
     }
 
     p {
       font-family: 'Fira Code';
-      color: white;
       font-size: 16;
       font-weight: normal;
+    }
+    
+    li a:hover {
+  background-color: #555;
+  color: white;
     }
 
     .navbar {
@@ -95,7 +98,77 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+    
+    .projects-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  scroll-margin-top: 80px; /* Adjust for sticky navigation */
+}
+
+.projects-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.project-left, .project-right {
+  flex: 1;
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-right h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: 'Fira Code';
+  font-weight: 2000;
+}
+
+.project-right p {
+  line-height: 1.6;
+}
+
+.projects-bottom {
+  text-align: center;
+}
+
+.slideshow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.slideshow img {
+  max-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.presentation-button:hover {
+  background-color: #45a049;
+}
   </style>
+  
+  
+  
+  
   <body>
     <div class="navbar">
       <div class="logo">Fintan Sharpe</div>
@@ -114,15 +187,56 @@
       <h1>Hi, Welcome to my Website!</h1>
       <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
       <hr>
+      <br>
+      <p>
+                Oh my bad... you want to learn more about me don’t you?
+            </p>
+            <p>
+                This website is all about me! My passions, my coolest projects, my resume, and a look into my life. 
+                Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating 
+                engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
+            </p>
+            <p>
+                Uh wait a minute, that’s a hefty statement…<br>
+                Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
+                (With some engaging prototypes too!)
+            </p>
+            <p>Alright, you can scroll down now.</p>
     </div>
     
-    <div class="prototype">
-      <h2>Explore My Figma Prototype</h2>
+
+
+<section id="projects" class="projects-section">
+  <div class="prototype">
       <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
       </iframe>
+  <div/>
+    <!-- Text Content -->
+    <div class="project-right">
+      <h2>Projects - RoomEase</h2>
+      <p>
+        We interviewed and surveyed hundreds of students, and they all said the same thing:
+        <br><br>
+        Why is finding housing to rent for University with my roommates so difficult?
+        <br><br>
+        Let us introduce RoomEase. After living in a dorm during our first year at University, we found that schools often leave students to fend for themselves when it comes to finding safe and affordable housing close to campus.
+        <br><br>
+        This prototype offers a solution, enabling students to search for housing, sublets, and roommates that match their lifestyle. 
+      </p>
+  </div>
+
+  <!-- Slideshow and Call to Action -->
+  <div class="projects-bottom">
+    <div class="slideshow">
+      <img src="slideshow-image1.png" alt="RoomEase Slide 1">
+      <img src="slideshow-image2.png" alt="RoomEase Slide 2">
+    </div>
+    <p>
+      Read more about how RoomEase can revolutionize the student-housing search process with our data and early product designing.
+    </p>
+    <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
+  </div>
     </section>
-
-
 
   </body>
 </html>
