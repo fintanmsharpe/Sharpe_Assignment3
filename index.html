@@ -81,75 +81,78 @@
       opacity: 0.8;
     }
 
-    .prototype {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .prototype h2 {
-      font-family: 'Fira Code';
-      font-size: 16;
-      margin-bottom: 1rem;
-      color: white;
-      padding-top: 100;
-    }
-
-    .prototype iframe {
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    .projects-section {
+    /* Section Styling */
+.projects-section {
   padding: 50px 20px;
   background-color: #f9f9f9;
   scroll-margin-top: 80px; /* Adjust for sticky navigation */
+  overflow: hidden; /* Clear floats */
 }
 
-.projects-container {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  margin-bottom: 40px;
+/* Prototype Section */
+.prototype {
+  float: left;
+  width: 50%; /* Take half of the available space */
+  text-align: center;
+  margin: 2rem 0;
+  display: inline;
 }
 
-.project-left, .project-right {
-  flex: 1;
-}
-
-.project-image {
-  max-width: 100%;
+.prototype iframe {
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center within the container */
+}
+
+.prototype h2 {
+  font-family: 'Fira Code', monospace;
+
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: white;
+  padding-top: 20px;
+}
+
+/* Text Content */
+.project-right {
+  float: right;
+  width: 50%; /* Take the other half of the available space */
+  padding: 0 20px; /* Add padding for spacing */
+  color: rgba(16, 52, 86, 1);
+  bottom: 600px;
 }
 
 .project-right h2 {
   font-size: 24px;
   margin-bottom: 15px;
-  font-family: 'Fira Code';
-  font-weight: 2000;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
 }
 
 .project-right p {
   line-height: 1.6;
+  font-size: 16px;
 }
 
+/* Projects Bottom Section */
 .projects-bottom {
+  clear: both; /* Ensure this section starts below floated content */
   text-align: center;
+  margin-top: 40px;
 }
 
 .slideshow {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
   margin-bottom: 20px;
 }
 
 .slideshow img {
   max-width: 200px;
+  margin: 0 10px; /* Space between images */
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Button Styling */
 .presentation-button {
   display: inline-block;
   background-color: #4caf50;
@@ -164,6 +167,40 @@
 .presentation-button:hover {
   background-color: #45a049;
 }
+    
+#container1 {
+      width: 1000px;
+      background-color: transparent;
+      clear: both;
+      position: relative;
+      bottom: 20px;
+    }
+
+    #blockA {
+      background-color: #96C5F7;
+      width: 300px;
+      height: 300px;
+      display: inline;
+      float: left;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+
+    #blockB {
+      background-color: #A9D3FF;
+      width: 300px;
+      height: 300px;
+      display: inline;
+      float: left;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
   </style>
   
   
@@ -207,10 +244,20 @@
 
 
 <section id="projects" class="projects-section">
+  
+  <div id="container1">
+      <h2>The Box Model</h2>
+      <div id="blockA">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div id="blockB">
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      </div>
+  </div>
   <div class="prototype">
       <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
       </iframe>
-  <div/>
+  </div>
     <!-- Text Content -->
     <div class="project-right">
       <h2>Projects - RoomEase</h2>
@@ -219,9 +266,9 @@
         <br><br>
         Why is finding housing to rent for University with my roommates so difficult?
         <br><br>
-        Let us introduce RoomEase. After living in a dorm during our first year at University, we found that schools often leave students to fend for themselves when it comes to finding safe and affordable housing close to campus.
+        Let us introduce: RoomEase. <br>After living in a dorm for our first years in University, we found that our schools tend to leave us to fend for ourselves when it comes to finding safe and affordable housing close to the school. This prototype presents a solution that can help students in the search for housing, sublets, and roommates that match their lifestyle.
         <br><br>
-        This prototype offers a solution, enabling students to search for housing, sublets, and roommates that match their lifestyle. 
+        Upon entering our app, users will be prompted to set up their personal profile, after which they will be able to engage in a simple housing search that doesn’t require the use of multiple housing websites, and gives students the ability the learn about the renting process in order to be more independent and prevent scams.
       </p>
   </div>
 
