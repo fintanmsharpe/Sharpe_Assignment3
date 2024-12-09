@@ -4,7 +4,7 @@
   <title>Fintan Sharpe</title>
   <link href="https://fonts.googleapis.com/css?family=Fira Code" rel="stylesheet">
   <style>
-    /* netnet default bg */
+    /* General Styling */
     body {
       background: linear-gradient(0deg, rgba(16, 52, 86, 1), rgba(55, 106, 153, 1));
       color: white;
@@ -22,6 +22,7 @@
       font-weight: normal;
     }
 
+    /* Navigation Bar Styling */
     li a:hover {
       background-color: #555;
       color: white;
@@ -32,12 +33,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16 32;
+      padding: 16 40;
       background: rgba(16, 52, 86, 1);
       position: sticky;
       top: 0;
-      width: 100%
-      
+      box-shadow: 0px 0px 20px 20px rgba(16, 52, 86, 1);
     }
 
     .navbar .logo {
@@ -58,10 +58,9 @@
       float: right;
     }
 
-    /* Landing Screen:) */
+    /* Landing Screen/About Section */
     .landing {
       margin-top: 10vh;
-      /* Centers content vertically */
       padding-top: 100;
       padding-bottom: 500;
       max-width: 800px;
@@ -87,15 +86,15 @@
       opacity: 0.8;
     }
 
-    /* Section Styling */
+    /* Project Section Styling */
     .projects-section {
       padding: 50px 20px;
       background-color: #f9f9f9;
+      box-shadow: 0px 0px 10px 20px #f9f9f9;
       scroll-margin-top: 80px;
-      overflow: hidden;
     }
 
-    /* Prototype Section */
+    /* Figma Prototype Formatting */
     .prototype {
       float: left;
       width: 45%;
@@ -118,6 +117,7 @@
       padding-top: 20px;
     }
 
+    /* Projects Top Section */
     .text-flexbox {
       width: 1000px;
       height: 600px;
@@ -148,7 +148,6 @@
     /* Projects Bottom Section */
     .projects-bottom {
       clear: both;
-      /* Ensure this section starts below floated content */
       text-align: center;
       margin-top: 40px;
     }
@@ -158,7 +157,6 @@
       width: 1200px;
       height: 200px;
       background-color: transparent;
-
 
     }
 
@@ -175,12 +173,11 @@
     .slideshow img {
       max-width: 600px;
       margin: 0 10px;
-      /* Space between images */
       border-radius: 4px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Button Styling */
+    /* Presentation Button Styling */
     .presentation-button {
       background-color: rgba(16, 52, 86, 1);
       color: #fff;
@@ -198,6 +195,84 @@
 
     .presentation-button:hover {
       background-color: rgba(100, 135, 103, 1);
+    }
+
+    /* Work/Resume Section Styling*/
+    
+    .work-section {
+      padding: 50px 20px;
+      
+      box-shadow: 0px 0px 10px 20px #f9f9f9;
+      scroll-margin-top: 80px;
+      
+    }
+    .work-section h2 {
+      
+    }
+    .resume-flexbox {
+      background-color: red;
+      width: 1000;
+      margin: 0 auto;
+      padding: 50;
+      position: relative;
+      
+    }
+    .resume-text{
+      float: right;
+    }
+    /* Hide the checkbox */
+    .expand-checkbox {
+      display: none;
+    }
+
+    /* Container for the resume */
+    .resume-container {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Background papers */
+    .paper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Slight rotation for the layered papers */
+    .paper1 {
+      transform: rotate(-8deg);
+      z-index: 1;
+    }
+
+    .paper2 {
+      transform: rotate(8deg);
+      z-index: 2;
+    }
+
+    /* Resume image */
+    .resume {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Expanded state using :checked */
+    .expand-checkbox:checked~.resume-label .resume {
+      transform: scale(2) translate(-25%, -25%);
+      z-index: 100;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
     }
   </style>
 
@@ -217,30 +292,30 @@
       </nav>
     </div>
 
-<section id="about">
-  <div class="landing">
-      <h1>Hi, Welcome to my Website!</h1>
-      <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
-      <hr>
+    <section id="about">
+      <div class="landing">
+        <h1>Hi, Welcome to my Website!</h1>
+        <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
+        <hr>
+        <br>
+        <p>
+          Oh my bad... you want to learn more about me don’t you?
+        </p>
+        <p>
+          This website is all about me! My passions, my coolest projects, my resume, and a look into my life.
+          Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating
+          engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
+        </p>
+        <p>
+          Uh wait a minute, that’s a hefty statement…<br>
+          Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
+          (With some engaging prototypes too!)
+        </p>
+        <p>Alright, you can scroll down now.</p>
+      </div>
       <br>
-      <p>
-        Oh my bad... you want to learn more about me don’t you?
-      </p>
-      <p>
-        This website is all about me! My passions, my coolest projects, my resume, and a look into my life.
-        Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating
-        engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
-      </p>
-      <p>
-        Uh wait a minute, that’s a hefty statement…<br>
-        Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
-        (With some engaging prototypes too!)
-      </p>
-      <p>Alright, you can scroll down now.</p>
-    </div>
-    <br>
     </section>
-    
+
     <section id="projects" class="projects-section">
       <!-- Text Content -->
       <div class="text-flexbox">
@@ -273,10 +348,45 @@
           <p>
             Read more about how RoomEase can revolutionize the student-housing search process on our slides, which includes a deep dive into our data and early product designing.
           </p>
-          <a href="presentation-link.pdf" class="presentation-button" target="_blank">Presentation Link</a>
+          <a href="https://www.figma.com/deck/8JVzOiR6BhACX0pgGy4AcF/DOMINGO-NAOMI-PRESENTATION?node-id=1-34&t=xoPACeG4Ck1co7Pb-1" class="presentation-button" target="_blank">Presentation Link</a>
         </div>
       </div>
     </section>
 
+
+    <section id="work" class="work-section">
+      <h2>Projects - RoomEase</h2>
+      <div class="resume-flexbox">
+        <div class="resume-container">
+          <!-- Checkbox to control the state -->
+          <input type="checkbox" id="expand-resume" class="expand-checkbox">
+          <label for="expand-resume" class="resume-label">
+            <!-- Background Papers -->
+            <div class="paper paper1"></div>
+            <div class="paper paper2"></div>
+
+            <!-- Resume Image -->
+            <img src="Resume Screen.png" alt="Fintan M. Sharpe Resume" class="resume">
+          </label>
+        </div>
+        <div class="resume-text">
+          <p>
+          jswjsjsjs
+        </p>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </section>
   </body>
 </html>
