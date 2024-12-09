@@ -59,10 +59,17 @@
     }
 
     /* Landing Screen/About Section */
+    .landing-flexbox {
+      width: 800px;
+      height: 700px;
+      margin: 0 auto;
+      padding-top: 200px;
+      padding-bottom: 300px;
+      background-color: transparant;
+    }
+
     .landing {
       margin-top: 10vh;
-      padding-top: 100;
-      padding-bottom: 500;
       max-width: 800px;
       margin: 0 auto;
     }
@@ -198,15 +205,13 @@
     }
 
     /* Work/Resume Section Styling*/
-    
+
     .work-section {
       padding: 100px 20px;
-      
-      box-shadow: 0px 0px 10px 20px #f9f9f9;
       scroll-margin-top: 80px;
-      
+
     }
-    
+
     .resume-flexbox {
       background-color: transparent;
       width: 1000px;
@@ -214,14 +219,15 @@
       margin: 0 auto;
       padding: 50px;
 
-      
+
     }
+
     .work-section h2 {
       font-size: 24px;
       margin-bottom: 15px;
       font-family: 'Fira Code', monospace;
       font-weight: bold;
-      
+
 
     }
 
@@ -229,15 +235,16 @@
       line-height: 1.6;
       font-size: 16px;
     }
-    
-    
-    .resume-text{
+
+
+    .resume-text {
       float: right;
       position: relative;
       right: 50px;
       bottom: 500px;
       max-width: 400px;
     }
+
     /* Hide the checkbox */
     .expand-checkbox {
       display: none;
@@ -288,9 +295,29 @@
 
     /* Expanded state using :checked */
     .expand-checkbox:checked~.resume-label .resume {
-      transform: scale(1.5) translate(-0%,-0%);
+      transform: scale(1.5) translate(-0%, -0%);
       z-index: 50;
       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    table {
+      font-family: 'Fira Code', monospace;
+      border-collapse: collapse;
+      width: 100%;
+
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+
+    }
+
+    tr:nth-child(even) {
+
+      border-radius: 5px;
     }
   </style>
 
@@ -311,27 +338,30 @@
     </div>
 
     <section id="about">
-      <div class="landing">
-        <h1>Hi, Welcome to my Website!</h1>
-        <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
-        <hr>
+      <div class="landing-flexbox">
+        <div class="landing">
+          <h1>Hi, Welcome to my Website!</h1>
+          <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
+          <hr>
+          <br>
+          <p>
+            Oh my bad... you want to learn more about me don’t you?
+          </p>
+          <p>
+            This website is all about me! My passions, my coolest projects, my resume, and a look into my life.
+            Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating
+            engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
+          </p>
+          <p>
+            Uh wait a minute, that’s a hefty statement…<br>
+            Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
+            (With some engaging prototypes too!)
+          </p>
+          <p>Alright, you can scroll down now.</p>
+        </div>
         <br>
-        <p>
-          Oh my bad... you want to learn more about me don’t you?
-        </p>
-        <p>
-          This website is all about me! My passions, my coolest projects, my resume, and a look into my life.
-          Since I’m quite the talker, I’ll try and keep things short and concise. I am passionate about creating
-          engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
-        </p>
-        <p>
-          Uh wait a minute, that’s a hefty statement…<br>
-          Well let’s do a deep dive into some projects that’ll knock your socks off.<br>
-          (With some engaging prototypes too!)
-        </p>
-        <p>Alright, you can scroll down now.</p>
       </div>
-      <br>
+
     </section>
 
     <section id="projects" class="projects-section">
@@ -373,7 +403,7 @@
 
 
     <section id="work" class="work-section">
-      
+
       <div class="resume-flexbox">
         <div class="resume-container">
           <!-- Checkbox to control the state -->
@@ -390,10 +420,36 @@
         <div class="resume-text">
           <h2>Work/Resume Highlights</h2>
           <p>
-          Bilingual Student @ University of Waterloo Stratford School of Interaction Design and Business + Varsity Men's Cross-Country
-        </p>
+            Bilingual Student @ University of Waterloo Stratford School of Interaction Design and Business + Varsity Men's Cross-Country
+          </p>
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Echelon Insurance (Co-op)</td>
+              <td>Toronto, Ontario</td>
+              <td>April-September 2024</td>
+            </tr>
+            <tr>
+              <td>Columbia Icefield</td>
+              <td>Waterloo, Ontario</td>
+              <td>September-Present</td>
+            </tr>
+            <tr>
+              <td>Metro Amberlea</td>
+              <td>2021-2024</td>
+              <td>Pickering, Ontario</td>
+            </tr>
+
+          </table>
+          <p>
+            <strong>Proficient: Photoshop, Illustrator, InDesign, Figma, Java, Python, HTML, CSS.</strong>
+          </p>
         </div>
-        
+
       </div>
 
 
