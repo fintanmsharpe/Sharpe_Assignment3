@@ -200,25 +200,43 @@
     /* Work/Resume Section Styling*/
     
     .work-section {
-      padding: 50px 20px;
+      padding: 100px 20px;
       
       box-shadow: 0px 0px 10px 20px #f9f9f9;
       scroll-margin-top: 80px;
       
     }
-    .work-section h2 {
-      
-    }
+    
     .resume-flexbox {
-      background-color: red;
-      width: 1000;
+      background-color: transparent;
+      width: 1000px;
+      height: 600px;
       margin: 0 auto;
-      padding: 50;
-      position: relative;
+      padding: 50px;
+
       
     }
+    .work-section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: 'Fira Code', monospace;
+      font-weight: bold;
+      
+
+    }
+
+    .work-section p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    
     .resume-text{
       float: right;
+      position: relative;
+      right: 50px;
+      bottom: 500px;
+      max-width: 400px;
     }
     /* Hide the checkbox */
     .expand-checkbox {
@@ -228,8 +246,8 @@
     /* Container for the resume */
     .resume-container {
       position: relative;
-      width: 300px;
-      height: 400px;
+      width: 400px;
+      height: 500px;
       cursor: pointer;
       transition: transform 0.3s ease-in-out;
     }
@@ -270,8 +288,8 @@
 
     /* Expanded state using :checked */
     .expand-checkbox:checked~.resume-label .resume {
-      transform: scale(2) translate(-25%, -25%);
-      z-index: 100;
+      transform: scale(1.5) translate(-0%,-0%);
+      z-index: 50;
       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
     }
   </style>
@@ -355,7 +373,7 @@
 
 
     <section id="work" class="work-section">
-      <h2>Projects - RoomEase</h2>
+      
       <div class="resume-flexbox">
         <div class="resume-container">
           <!-- Checkbox to control the state -->
@@ -370,8 +388,9 @@
           </label>
         </div>
         <div class="resume-text">
+          <h2>Work/Resume Highlights</h2>
           <p>
-          jswjsjsjs
+          Bilingual Student @ University of Waterloo Stratford School of Interaction Design and Business + Varsity Men's Cross-Country
         </p>
         </div>
         
