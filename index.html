@@ -65,7 +65,7 @@
       margin: 0 auto;
       padding-top: 200px;
       padding-bottom: 300px;
-      background-color: transparant;
+      background-color: transparent;
     }
 
     .landing {
@@ -323,15 +323,18 @@
     /* Running/About Me Section Styling */
     #running {
       background-color: #f9f9f9;
+      box-shadow: 0px 0px 10px 20px #f9f9f9;
       padding: 32;
-      height: 1200;
+      height: 900;
     }
 
     .running-flexbox {
       width: 900;
       gap: 2rem;
       margin: 0 auto;
-      background-color: red;
+      background-color: transparent;
+      position: relative;
+      top: 100;
     }
 
     /* Left Column (Text) */
@@ -351,10 +354,10 @@
       line-height: 1.6;
       font-size: 16;
       color: rgba(16, 52, 86, 1);
-      
+
     }
 
-    /* Right Column (Media) */
+    /* Right Column (Running Pictures and Strava Embed) */
     .media {
       position: relative;
       float: right;
@@ -370,7 +373,7 @@
 
     .image-wall img {
       width: 150;
-      
+
       border-radius: 5px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -380,6 +383,41 @@
       border: none;
       border-radius: 5px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+
+      padding: 20px;
+    }
+
+    .contact-flexbox {
+      align-items: center;
+      gap: 15px;
+      color: white;
+      position: relative;
+      top: 50;
+    }
+
+    .contact-photo {
+      width: 80px;
+      /* Adjust size */
+      height: 80px;
+      border-radius: 50%;
+      /* Makes it circular */
+      object-fit: cover;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info a:visited {
+      color: purple;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
     }
   </style>
 
@@ -515,14 +553,14 @@
     </section>
 
     <section id="running">
-      <div class="center">
-        <div class="running-flexbox">
+
+      <div class="running-flexbox">
         <div class="About-me">
           <h2>About Me</h2>
           <p>
             Other than my passion for what I’m studying in the Global Business and Digital Arts program, I have a love for fitness and endurance sports. Over the last few years, running, cycling and swimming have become huge parts of my life. As I’ve mentioned before, I am now running Cross-Country for the Waterloo Warriors, and I also participate in road races across the country.
             <br><br>
-            I am incredibly proud of what I’ve been able to achieve. This includes a full marathon at 19 years old in Vancouver, British Columbia, a first place finish in my age group at the Toronto Waterfront half marathon, and having raced multiple races for my University starting in 2024.
+            I am incredibly proud of what I’ve been able to achieve. This includes a full marathon at 19 years old in Vancouver, British Columbia, a first place finish in my age group at the Toronto Waterfront half marathon, and I have raced multiple races for my University starting in 2024.
             <br><br>
             Running by itself is one of my biggest passions, as through this sport I have been able to meet and run with so many inspiring people. It has also taught me some incredible life lessons about discipline and commitment that I will carry with me for the rest of my life. I have my sights set on the Toronto Marathon in May of 2025!
           </p>
@@ -540,8 +578,19 @@
           </div>
         </div>
       </div>
-      </div>
-      
     </section>
+
+    <footer>
+      <div class="contact-flexbox">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQHzAw4cgcS_aQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730669928657?e=2147483647&v=beta&t=U5BA1a_FbbezBf6sHtQ-AJ5TmMAU7QAlgsTYtHUq_TU" alt="Fintan Sharpe's LinkedIn Photo" class="contact-photo" />
+        <div class="contact-info">
+          <p><strong>Contacts</strong></p>
+          <p><a href="mailto:f2sharpe@uwaterloo.ca">f2sharpe@uwaterloo.ca</a></p>
+          <p><a href="https://instagram.com/fintanmsharpe" target="_blank">@fintanmsharpe - Instagram</a></p>
+          <p><a href="https://www.linkedin.com/in/fintan-sharpe-634895221/?originalSubdomain=ca" target="_blank">Fintan Sharpe - LinkedIn</a></p>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
