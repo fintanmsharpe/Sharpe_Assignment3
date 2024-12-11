@@ -2,9 +2,10 @@
 <html lang="en">
   <meta charset="UTF-8">
   <title>Fintan Sharpe</title>
+   <!-- Made by Fintan Sharpe on December 10th, 2024! -->
   <link href="https://fonts.googleapis.com/css?family=Fira Code" rel="stylesheet">
   <style>
-    /* General Styling */
+    /* Main */
     body {
       background: linear-gradient(0deg, rgba(16, 52, 86, 1), rgba(55, 106, 153, 1));
       color: white;
@@ -41,7 +42,7 @@
     }
 
     .navbar .logo {
-      font-size: 1.2rem;
+      font-size: 16;
       font-weight: bold;
     }
 
@@ -119,7 +120,7 @@
     .prototype h2 {
       font-family: 'Fira Code', monospace;
       font-size: 16px;
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
       color: white;
       padding-top: 20px;
     }
@@ -130,13 +131,11 @@
       height: 600px;
       background-color: transparent;
       margin: 0 auto;
-
     }
 
     .project-right {
       color: rgba(16, 52, 86, 1);
       padding: 5px;
-
     }
 
     .project-right h2 {
@@ -144,7 +143,6 @@
       margin-bottom: 15px;
       font-family: 'Fira Code', monospace;
       font-weight: bold;
-
     }
 
     .project-right p {
@@ -164,7 +162,6 @@
       width: 1200px;
       height: 200px;
       background-color: transparent;
-
     }
 
     .text-flexbox-2 p {
@@ -205,11 +202,9 @@
     }
 
     /* Work/Resume Section Styling*/
-
     .work-section {
       padding: 100px 20px;
       scroll-margin-top: 80px;
-
     }
 
     .resume-flexbox {
@@ -218,8 +213,6 @@
       height: 600px;
       margin: 0 auto;
       padding: 50px;
-
-
     }
 
     .work-section h2 {
@@ -227,16 +220,13 @@
       margin-bottom: 15px;
       font-family: 'Fira Code', monospace;
       font-weight: bold;
-
-
     }
 
     .work-section p {
       line-height: 1.6;
       font-size: 16px;
     }
-
-
+    
     .resume-text {
       float: right;
       position: relative;
@@ -250,7 +240,7 @@
       display: none;
     }
 
-    /* Container for the resume */
+    /* Flexbox for the resume */
     .resume-container {
       position: relative;
       width: 400px;
@@ -259,7 +249,7 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    /* Background papers */
+    /* Papers */
     .paper {
       position: absolute;
       width: 100%;
@@ -270,7 +260,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-    /* Slight rotation for the layered papers */
+    /* Paper Styling */
     .paper1 {
       transform: rotate(-8deg);
       z-index: 1;
@@ -281,7 +271,7 @@
       z-index: 2;
     }
 
-    /* Resume image */
+    /* Resume */
     .resume {
       position: absolute;
       width: 100%;
@@ -293,18 +283,17 @@
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
-    /* Expanded state using :checked */
+    /* Expanded Resume */
     .expand-checkbox:checked~.resume-label .resume {
       transform: scale(1.5) translate(-0%, -0%);
       z-index: 50;
       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
     }
-
+    /*Table for Job Experience*/
     table {
       font-family: 'Fira Code', monospace;
       border-collapse: collapse;
       width: 100%;
-
     }
 
     td,
@@ -316,13 +305,12 @@
     }
 
     tr:nth-child(even) {
-
       border-radius: 5px;
     }
 
     /* Running/About Me Section Styling */
     #running {
-      background-color: #f9f9f9;
+      background-color: #f9f9f9;/*White*/
       box-shadow: 0px 0px 10px 20px #f9f9f9;
       padding: 32;
       height: 900;
@@ -330,7 +318,7 @@
 
     .running-flexbox {
       width: 900;
-      gap: 2rem;
+      gap: 32px;
       margin: 0 auto;
       background-color: transparent;
       position: relative;
@@ -354,7 +342,6 @@
       line-height: 1.6;
       font-size: 16;
       color: rgba(16, 52, 86, 1);
-
     }
 
     /* Right Column (Running Pictures and Strava Embed) */
@@ -362,10 +349,9 @@
       position: relative;
       float: right;
       bottom: 700;
-      gap: 1rem;
+      gap: 16px;
     }
 
-    /* Image Wall */
     .image-wall {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -373,7 +359,6 @@
 
     .image-wall img {
       width: 150;
-
       border-radius: 5px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -385,8 +370,8 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    /*Contacts*/
     footer {
-
       padding: 20px;
     }
 
@@ -400,10 +385,8 @@
 
     .contact-photo {
       width: 80px;
-      /* Adjust size */
       height: 80px;
       border-radius: 50%;
-      /* Makes it circular */
       object-fit: cover;
     }
 
@@ -412,7 +395,7 @@
     }
 
     .contact-info a:visited {
-      color: purple;
+      color: pink;
     }
 
     .contact-info a {
@@ -420,33 +403,27 @@
       text-decoration: none;
     }
   </style>
-
-
-
-
+<!--Start of Content and Navigation Bar-->
   <body>
     <div class="navbar">
       <div class="logo">Fintan Sharpe</div>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#intro">Intro</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#work">Work/Resume</a></li>
-          <li><a href="#running">Running</a></li>
+          <li><a href="#running">About Me</a></li>
         </ul>
       </nav>
     </div>
-
-    <section id="about">
+<!--Landing Page Content-->
+    <section id="intro">
       <div class="landing-flexbox">
         <div class="landing">
           <h1>Hi, Welcome to my Website!</h1>
           <p>My name is Fintan, and I am a second year University Student and Varsity Cross-Country athlete studying Global Business and Digital Arts at the University of Waterloo.</p>
           <hr>
           <br>
-          <p>
-
-          </p>
           <p>
             I am passionate about creating
             engaging and innovative digital solutions that can enhance user experiences and solve real-world problems.
@@ -460,11 +437,9 @@
         </div>
         <br>
       </div>
-
     </section>
-
+<!--Projects Page Content-->
     <section id="projects" class="projects-section">
-      <!-- Text Content -->
       <div class="text-flexbox">
         <div class="prototype">
           <iframe style="border: none; width: 300px; height: 600px;" src="https://embed.figma.com/proto/Zg1dGVdIEeKMVnxzPwSip4/High-Fidelity-Prototypes?node-id=60-367&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=54%3A331&starting-point-node-id=60%3A367&embed-host=share" allowfullscreen>
@@ -483,9 +458,7 @@
           </p>
         </div>
       </div>
-
-
-      <!-- Slideshow and Call to Action -->
+      <!-- Slideshow-->
       <div class="projects-bottom">
         <div class="slideshow">
           <img src="Home.png" alt="RoomEase Slide 2">
@@ -499,20 +472,15 @@
         </div>
       </div>
     </section>
-
-
+<!--Work and Resume Content-->
     <section id="work" class="work-section">
-
       <div class="resume-flexbox">
         <div class="resume-container">
-          <!-- Checkbox to control the state -->
+          <!--Controls to make Resume Expand -->
           <input type="checkbox" id="expand-resume" class="expand-checkbox">
           <label for="expand-resume" class="resume-label">
-            <!-- Background Papers -->
             <div class="paper paper1"></div>
             <div class="paper paper2"></div>
-
-            <!-- Resume Image -->
             <img src="Resume Screen.png" alt="Fintan M. Sharpe Resume" class="resume">
           </label>
         </div>
@@ -521,6 +489,7 @@
           <p>
             Bilingual Student @ University of Waterloo Stratford School of Interaction Design and Business + Varsity Men's Cross-Country
           </p>
+          <!--Table!-->
           <table>
             <tr>
               <th>Company</th>
@@ -542,18 +511,15 @@
               <td>2021-2024</td>
               <td>Pickering, Ontario</td>
             </tr>
-
           </table>
           <p>
             <strong>Proficient: Photoshop, Illustrator, InDesign, Figma, Java, Python, HTML, CSS.</strong>
           </p>
         </div>
-
       </div>
     </section>
-
+<!--About me / Running Content-->
     <section id="running">
-
       <div class="running-flexbox">
         <div class="About-me">
           <h2>About Me</h2>
@@ -579,7 +545,7 @@
         </div>
       </div>
     </section>
-
+<!--Ending Content (Contact me, etc... for footer)-->
     <footer>
       <div class="contact-flexbox">
         <img src="https://media.licdn.com/dms/image/v2/D5603AQHzAw4cgcS_aQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730669928657?e=2147483647&v=beta&t=U5BA1a_FbbezBf6sHtQ-AJ5TmMAU7QAlgsTYtHUq_TU" alt="Fintan Sharpe's LinkedIn Photo" class="contact-photo" />
@@ -591,6 +557,6 @@
         </div>
       </div>
     </footer>
-
+<!-- End of Website! Celebrate!-->
   </body>
 </html>
